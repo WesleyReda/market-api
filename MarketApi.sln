@@ -3,12 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketApi", "MarketApi\MarketApi.csproj", "{FDE88E23-F89F-4587-9D56-0739F6F53B58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarketApi", "MarketApi\MarketApi.csproj", "{FDE88E23-F89F-4587-9D56-0739F6F53B58}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionFiles", "SolutionFiles", "{B0B80329-8F11-4DE3-9FD2-DBFED56A38D6}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketApi.Application", "MarketApi.Application\MarketApi.Application.csproj", "{F81906EC-0E07-4FFD-A71A-C72D8940FF0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketApi.Domain", "MarketApi.Domain\MarketApi.Domain.csproj", "{C4C2FDAA-AD36-4EE1-A139-5A56762AE0FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketApi.CrossCutting", "MarketApi.CrossCutting\MarketApi.CrossCutting.csproj", "{7A12DA6A-E083-4C80-9784-DB65CBF69972}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketApi.Repository", "MarketApi.Repository\MarketApi.Repository.csproj", "{43755824-1B9B-4A2C-8AA7-D9C3182DEB02}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +28,22 @@ Global
 		{FDE88E23-F89F-4587-9D56-0739F6F53B58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDE88E23-F89F-4587-9D56-0739F6F53B58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDE88E23-F89F-4587-9D56-0739F6F53B58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F81906EC-0E07-4FFD-A71A-C72D8940FF0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F81906EC-0E07-4FFD-A71A-C72D8940FF0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F81906EC-0E07-4FFD-A71A-C72D8940FF0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F81906EC-0E07-4FFD-A71A-C72D8940FF0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4C2FDAA-AD36-4EE1-A139-5A56762AE0FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4C2FDAA-AD36-4EE1-A139-5A56762AE0FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4C2FDAA-AD36-4EE1-A139-5A56762AE0FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4C2FDAA-AD36-4EE1-A139-5A56762AE0FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A12DA6A-E083-4C80-9784-DB65CBF69972}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A12DA6A-E083-4C80-9784-DB65CBF69972}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A12DA6A-E083-4C80-9784-DB65CBF69972}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A12DA6A-E083-4C80-9784-DB65CBF69972}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43755824-1B9B-4A2C-8AA7-D9C3182DEB02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43755824-1B9B-4A2C-8AA7-D9C3182DEB02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43755824-1B9B-4A2C-8AA7-D9C3182DEB02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43755824-1B9B-4A2C-8AA7-D9C3182DEB02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

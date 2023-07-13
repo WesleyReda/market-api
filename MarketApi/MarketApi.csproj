@@ -10,4 +10,9 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MarketApi.Application\MarketApi.Application.csproj" />
+    <ProjectReference Include="..\MarketApi.CrossCutting\MarketApi.CrossCutting.csproj" />
+  </ItemGroup>
+
 </Project>
