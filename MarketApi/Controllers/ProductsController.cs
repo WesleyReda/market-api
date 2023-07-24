@@ -1,4 +1,5 @@
 ﻿using MarketApi.Application.Interfaces;
+using MarketApi.Application.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MarketApi.Controllers
@@ -16,9 +17,9 @@ namespace MarketApi.Controllers
 
 
         [HttpGet]
-        public IActionResult GetProducts()
+        public IEnumerable<ProductViewModel> GetProducts()
         {
-            return Ok();
+            return _productsService.GetProducts();
         }
     }
 }

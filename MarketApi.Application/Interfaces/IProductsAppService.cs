@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MarketApi.Application.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,6 @@ namespace MarketApi.Application.Interfaces
 {
     public interface IProductsAppService
     {
+        IEnumerable<ProductViewModel> GetProducts();
     }
 }
