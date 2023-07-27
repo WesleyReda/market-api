@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarketApi.Domain.Entities
+namespace MarketApi.Application.ViewModels
 {
     public class EntityViewModel
     {

@@ -1,9 +1,6 @@
-using MarketApi.Application.AppServices;
-using MarketApi.Application.Interfaces;
-using MarketApi.Domain.Interfaces;
-using MarketApi.Domain.Services;
-using MarketApi.Repository.Interfaces;
-using MarketApi.Repository.Repositories;
+using MarketApi.Application.Extensions;
+using MarketApi.Domain.Extensions;
+using MarketApi.Repository.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,9 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-builder.Services.AddScoped<IProductsAppService, ProductsAppService>();
-builder.Services.AddScoped<IProductsService, ProductsService>();
-builder.Services.AddScoped<IProductsRepository, ProductsRepository>();
+builder.Services.AddScopedAppServices()
+    .AddScopedDomainServices()
+    .AddScopedRepositoryServices();
 
 builder.Services.AddSwaggerGen();
 
@@ -22,8 +19,8 @@ var app = builder.Build();
 // Configure Swagger
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwagger()
+       .UseSwaggerUI();
 }
 
 app.UseSwaggerUI(options =>
