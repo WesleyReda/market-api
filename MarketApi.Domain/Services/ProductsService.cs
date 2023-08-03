@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace MarketApi.Domain.Services
 {
-    public class ProductsService : IProductsService
+    public class ProductsService : BaseService, IProductsService
     {
         private readonly IProductsRepository _productsRepository;
         public ProductsService(IProductsRepository productsRepository)

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MarketApi.Repository.Repositories
 {
-    public class MarketsRepository : IMarketsRepository
+    public class MarketsRepository : BaseRepository, IMarketsRepository
     {
         
         public MarketsRepository() {

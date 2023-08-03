@@ -1,4 +1,5 @@
-﻿using MarketApi.Application.Interfaces;
+﻿using AutoMapper;
+using MarketApi.Application.Interfaces;
 using MarketApi.Application.ViewModels;
 using MarketApi.Domain.Interfaces;
 
@@ -8,22 +9,19 @@ namespace MarketApi.Application.AppServices
     {
         private readonly IMarketsService _marketsService;
 
-        public MarketsAppService(IMarketsService marketsService)
+        private readonly IMapper _mapper;
+
+        public MarketsAppService(IMarketsService marketsService, IMapper mapper)
         {
             _marketsService = marketsService;
+            _mapper = mapper;
         }
 
         public IEnumerable<MarketViewModel> GetMarkets()
         {
-            var markets = _marketsService.GetMarkets()
-                .Select(p => new MarketViewModel
-                {
-                    CreatedAt = p.CreatedAt,
-                    Description = p.Description,
-                    Id = p.Id
-                });
+            var markets = _marketsService.GetMarkets();
 
-            return markets;
+            return _mapper.Map<IEnumerable<MarketViewModel>>(markets);
         }
     }
 }

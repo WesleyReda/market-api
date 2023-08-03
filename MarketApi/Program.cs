@@ -1,6 +1,8 @@
+using MarketApi.CrossCutting.CommonServices;
+using MarketApi.Application.AppServices;
 using MarketApi.Application.Extensions;
-using MarketApi.Domain.Extensions;
-using MarketApi.Repository.Extensions;
+using MarketApi.Domain.Services;
+using MarketApi.Repository.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,9 +10,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
-builder.Services.AddScopedAppServices()
-    .AddScopedDomainServices()
-    .AddScopedRepositoryServices();
+builder.Services
+    .AddScopedServicesByBaseServiceType<BaseAppService>()
+    .AddScopedServicesByBaseServiceType<BaseService>()
+    .AddScopedServicesByBaseServiceType<BaseRepository>();
+
+builder.Services.AddAppAutoMapper();
 
 builder.Services.AddSwaggerGen();
 

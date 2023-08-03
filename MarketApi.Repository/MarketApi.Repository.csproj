@@ -14,4 +14,8 @@
     <ProjectReference Include="..\MarketApi.CrossCutting\MarketApi.CrossCutting.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+
 </Project>
