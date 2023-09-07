@@ -5,10 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarketApi.Domain.Interfaces
+namespace MarketApi.Domain.Services.Interfaces
 {
-    public interface IProductsService
+    public interface IMarketsService
     {
-        IEnumerable<Product> GetProducts();
+        IEnumerable<Market> GetMarkets();
     }
 }

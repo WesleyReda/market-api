@@ -3,6 +3,7 @@ using MarketApi.Application.AppServices;
 using MarketApi.Application.Extensions;
 using MarketApi.Domain.Services;
 using MarketApi.Repository.Repositories;
+using MarketApi.Repository.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +17,8 @@ builder.Services
     .AddScopedServicesByBaseServiceType<BaseRepository>();
 
 builder.Services.AddAppAutoMapper();
+
+builder.Services.AddContext(builder.Configuration);
 
 builder.Services.AddSwaggerGen();
 

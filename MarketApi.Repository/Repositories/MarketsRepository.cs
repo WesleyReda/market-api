@@ -1,4 +1,5 @@
-﻿using MarketApi.Repository.Interfaces;
+﻿using MarketApi.Domain.Entities;
+using MarketApi.Domain.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,10 +10,14 @@ namespace MarketApi.Repository.Repositories
 {
     public class MarketsRepository : BaseRepository, IMarketsRepository
     {
-        
-        public MarketsRepository() {
 
-            
+        public MarketsRepository()
+        {
+
+        }
+        public IEnumerable<Market> GetMarkets()
+        {
+            return new List<Market>() { new Market(), new Market() };
         }
     }
 }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace MarketApi.CrossCutting.CommonServices
 {
-    public static class BootstrapExtensions
+    public static class StartupExtensions
     {
         public static IServiceCollection AddScopedServicesByBaseServiceType<TBaseService>(this IServiceCollection services)
         {

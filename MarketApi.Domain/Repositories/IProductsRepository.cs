@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarketApi.Repository.Interfaces
+namespace MarketApi.Domain.Repositories
 {
     public interface IProductsRepository
     {

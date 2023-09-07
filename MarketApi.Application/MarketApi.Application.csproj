@@ -9,6 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\MarketApi.CrossCutting\MarketApi.CrossCutting.csproj" />
     <ProjectReference Include="..\MarketApi.Domain\MarketApi.Domain.csproj" />
+    <ProjectReference Include="..\MarketApi.Repository\MarketApi.Repository.csproj" />
   </ItemGroup>
 
   <ItemGroup>

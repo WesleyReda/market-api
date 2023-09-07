@@ -1,6 +1,6 @@
 ﻿using MarketApi.Domain.Entities;
-using MarketApi.Domain.Interfaces;
-using MarketApi.Repository.Interfaces;
+using MarketApi.Domain.Services.Interfaces;
+using MarketApi.Domain.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,7 +20,7 @@ namespace MarketApi.Domain.Services
 
         public IEnumerable<Market> GetMarkets()
         {
-            return new List<Market>() {new Market(), new Market() };
+            return _marketsRepository.GetMarkets();
         }
     }
 }

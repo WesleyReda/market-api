@@ -1,4 +1,4 @@
-﻿using MarketApi.Repository.Interfaces;
+﻿using MarketApi.Domain.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Linq;

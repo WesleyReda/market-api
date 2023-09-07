@@ -1,6 +1,6 @@
 ﻿using MarketApi.Application.Interfaces;
 using MarketApi.Application.ViewModels;
-using MarketApi.Domain.Interfaces;
+using MarketApi.Domain.Services.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,12 +1,14 @@
-﻿using System;
+﻿using MarketApi.Domain.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MarketApi.Repository.Interfaces
+namespace MarketApi.Domain.Repositories
 {
     public interface IMarketsRepository
     {
+        IEnumerable<Market> GetMarkets();
     }
 }
