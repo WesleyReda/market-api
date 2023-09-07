@@ -1,0 +1,48 @@
+<mxfile host="app.diagrams.net" modified="2023-09-07T18:20:07.247Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36" etag="9XtS1s7WlB-aEhA1RQKG" version="21.7.2" type="github">
+  <diagram name="Página-1" id="K7cwfZFdTvxOhiEzS9kE">
+    <mxGraphModel dx="1434" dy="792" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="U7zCCiyyuEkRDr9fOdDr-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="U7zCCiyyuEkRDr9fOdDr-1" target="U7zCCiyyuEkRDr9fOdDr-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U7zCCiyyuEkRDr9fOdDr-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="U7zCCiyyuEkRDr9fOdDr-1" target="U7zCCiyyuEkRDr9fOdDr-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U7zCCiyyuEkRDr9fOdDr-1" value="MarketApi&lt;br&gt;&lt;i&gt;Api Rest Layer&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="238" y="50" width="176" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="U7zCCiyyuEkRDr9fOdDr-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="U7zCCiyyuEkRDr9fOdDr-2" target="U7zCCiyyuEkRDr9fOdDr-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U7zCCiyyuEkRDr9fOdDr-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="U7zCCiyyuEkRDr9fOdDr-2" target="U7zCCiyyuEkRDr9fOdDr-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U7zCCiyyuEkRDr9fOdDr-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="U7zCCiyyuEkRDr9fOdDr-2" target="U7zCCiyyuEkRDr9fOdDr-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U7zCCiyyuEkRDr9fOdDr-2" value="MarketApi.Application&lt;br&gt;&lt;i&gt;Mapping/Orchestration Layer&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="238" y="150" width="176" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="U7zCCiyyuEkRDr9fOdDr-3" value="MarketApi.CrossCutting&lt;br&gt;&lt;i&gt;Infrastructure/Common Layer&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="530" y="150" width="176" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="U7zCCiyyuEkRDr9fOdDr-4" value="MarketApi.Domain&lt;br&gt;&lt;i&gt;Business/Core Layer&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="240" width="176" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="U7zCCiyyuEkRDr9fOdDr-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="U7zCCiyyuEkRDr9fOdDr-5" target="U7zCCiyyuEkRDr9fOdDr-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="U7zCCiyyuEkRDr9fOdDr-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="U7zCCiyyuEkRDr9fOdDr-5" target="U7zCCiyyuEkRDr9fOdDr-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="U7zCCiyyuEkRDr9fOdDr-5" value="MarketApi.Repository&lt;br&gt;&lt;i&gt;Data Access Layer&lt;/i&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="238" y="330" width="176" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
